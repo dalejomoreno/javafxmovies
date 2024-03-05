@@ -1,0 +1,33 @@
+/* Styles for the main container */
+#musicalgenreviewcontainter {
+    -fx-background-color: #F0F0F0; /* Light gray background */
+}
+
+/* Styles for the title */
+#title {
+    -fx-text-fill: #4C4C4C; /* Dark gray text color */
+    -fx-font-family: "Arial", sans-serif; /* Standard font family */
+    -fx-font-size: 36px; /* Larger font size for the title */
+    -fx-font-weight: bold; /* Bold font weight */
+}
+
+/* Styles for the description label */
+.description-label {
+    -fx-text-fill: #666666; /* Slightly darker gray text color */
+    -fx-font-size: 14px; /* Increased font size for better readability */
+}
+
+/* Styles for the buttons */
+.button {
+    -fx-background-color: #5E8B7E; /* Muted green background */
+    -fx-text-fill: #FFFFFF; /* White text color */
+    -fx-font-size: 16px; /* Larger font size for buttons */
+    -fx-font-family: "Arial", sans-serif; /* Standard font family */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-padding: 8px 16px; /* Improved button padding */
+}
+
+/* Styles for the buttons on hover */
+.button:hover {
+    -fx-background-color: #4C6E63; /* Darker green background on hover */
+}

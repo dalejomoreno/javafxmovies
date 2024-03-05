@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="musicalgenreviewcontainter" alignment="TOP_CENTER" prefHeight="466.0" prefWidth="660.0" spacing="20.0" style="-fx-background-color: #95ECD6;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.best_movies.GenreController" >
+    <padding>
+        <!-- Set padding for the VBox -->
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label id="title" fx:id="welcomeText" prefHeight="51.0" prefWidth="624.0" text="Movie per Genre" textFill="#c979bc">
+        <font>
+            <!-- Set font for the title label -->
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+        </font>
+    </Label>
+
+    <Label prefHeight="51.0" prefWidth="624.0" text="The graph shows the different kind of movies in the list" textFill="#000000">
+        <font>
+            <!-- Set font for the description label -->
+            <Font size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Create a PieChart to display movie genres -->
+    <PieChart fx:id="pieChart" prefHeight="268.0" prefWidth="543.0" />
+
+    <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <!-- Button to view table -->
+            <Button mnemonicParsing="false" onAction="#tableViewButton" text="View Table" />
+            <!-- Button to view Money Raised 2022 -->
+            <Button mnemonicParsing="false" onAction="#moneyRaisedButton" text="Money Raised" />
+            <!-- Button to view movies genre -->
+            <Button disable="false" onAction="#genreViewButton" text="Movie by Genre" />
+        </buttons>
+    </ButtonBar>
+</VBox>
